@@ -21,26 +21,26 @@ function toggleMenu() {
     /* Findout What are htmlcollections */
     /* Show Menu */
     const MenuContent = document.getElementsByClassName('menu')[0];
-    const getMenuContentStyle = window.getComputedStyle(MenuContent);
-    const MenuContentStyle = getMenuContentStyle.getPropertyValue('display');
-    
-    const MainContents = document.getElementsByClassName('main-content');
-    
-    // Convert the HTMLCollection to a regular array using the spread operator
-    const mainContentArray = [...MainContents];
-    
-    mainContentArray.forEach((MainContent) => {
-      const getMainContentStyle = window.getComputedStyle(MainContent);
-      const MainContentStyle = getMainContentStyle.getPropertyValue('display');
-    
-      if (MainContentStyle === "block" || MenuContentStyle === "none") {
-        MainContent.style.display = "none";
-        MenuContent.style.display = "grid";
-      } else {
-        MainContent.style.display = "block";
-        MenuContent.style.display = "none";
-      }
-    });
+const getMenuContentStyle = window.getComputedStyle(MenuContent);
+const MenuContentStyle = getMenuContentStyle.getPropertyValue('display');
+
+const MainContents = document.getElementsByClassName('main-content');
+
+// Convert the HTMLCollection to a regular array using Array.from()
+const mainContentArray = Array.from(MainContents);
+
+mainContentArray.forEach((MainContent) => {
+  const getMainContentStyle = window.getComputedStyle(MainContent);
+  const MainContentStyle = getMainContentStyle.getPropertyValue('display');
+
+  if (MainContentStyle === "block" || MenuContentStyle === "none") {
+    MainContent.style.display = "none";
+    MenuContent.style.display = "grid";
+  } else {
+    MainContent.style.display = "block";
+    MenuContent.style.display = "none";
+  }
+});
 
     /* start background color change */
     const Header = document.getElementById('header')
