@@ -1,0 +1,452 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root */
+:root {
+    --Main-color: rgb(24, 24, 24);
+    --White-color: white;
+    --RGB-COLOR: rgb(174, 148, 109);
+    --Font-size-small : small;
+    --Font-size-medium : medium;
+    --Button-color : rgb(24, 24, 24);
+    font-family: 'Roboto Slab', serif;
+    --Font-family-2:'Montserrat', sans-serif;
+}
+
+/* Postioning */
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* header Styles */
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    
+}
+/* cursor */
+.cursor:hover {
+    cursor: pointer;
+}
+/* icons */
+.fa-magnifying-glass {
+    color: var(--White-color);
+    z-index: 5;
+    
+}
+
+/* No wrap */
+.no-wrap {
+    white-space: nowrap;
+    flex: 1;
+    flex-shrink: 2;
+}
+
+/* Main Button styles */
+button {
+    background-color: var(--Button-color);
+    color: var(--White-color);
+    line-height: 24px;
+    font-weight: 800;
+    padding: 5px 15px;
+    margin: 10px;
+    font-size: medium;
+    border-radius: 2px;
+}
+
+/* Long-btn */
+.long-btn {
+    width: 80vw;
+    margin: 10px 0;
+}
+
+/* Header syles */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Main-color);
+    color: var(--White-color);
+}
+
+.promo-bar {
+    background-color:var(--RGB-COLOR); 
+    color: var(--White-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    font-size: var(--Font-size-small);
+    text-align: center;
+}
+
+.promo-bar .two {
+    margin-bottom: 0;
+    font-family: var(--Font-family-2);
+}
+
+.learn-more {
+    text-decoration: underline;
+}
+
+.mobile-nav-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--Font-size-medium);
+    margin: 10px 0px;
+    font-family:var(--Font-family-2) ;
+    
+}
+
+.nav-icons div{
+    padding: 5px;
+    
+}
+
+.nav-icons div:hover{
+    background-color: rgb(59, 59, 59);
+}
+
+.menu-icon {
+    font-size: smaller;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+/* Brand */
+/* Change size when screen is big */
+.brand {
+ 
+    font-family: 'Mynerve', cursive;
+    font-size: small;
+    
+}
+.display-inline {
+    display: inline-block;
+    
+}
+
+/* Search box */
+.search-bar {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search-border {
+    height: 40px;
+    width: 80vw;
+    border: rgb(138, 137, 137) 2px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+ .search-bar input{
+    background-color: rgb(24, 24, 24);
+    outline: none;
+    box-shadow: none;
+    border: none;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: 500;
+    color: antiquewhite;
+    
+    
+ }
+
+.search-border input {
+ width: 70%;
+}
+
+.cross-icon{
+    position: absolute;
+    right: 90px;
+}
+ 
+.search-icon {
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+}
+
+/* Menu */
+.main-content {
+    display: block;
+
+}
+
+.menu {
+display: none;
+}
+
+.menu-contents {
+    display: grid;/* Grid */
+    flex-direction: column;
+    place-content: center;
+    /* display: none; */
+}
+
+.menu-contents hr {
+    background-color: gainsboro;
+}
+.menu-contents ul li {
+    margin: 20px 0;
+    height: 50px;
+    width: 60vw;
+    border: white 1px solid;
+    border-bottom: gainsboro solid 2px;
+    display: block;
+    font-size: large;
+    font-weight: 500;
+}
+
+.menu-contents ul li:hover{
+    cursor: pointer;
+    box-shadow: 5px;
+}
+
+/* Main content */
+
+/* INLINE */
+.inline{
+    display: inline;
+    background-color: var(--Main-color);
+}
+
+/* General Image styles */
+.img-container {
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Gallery 1 */
+.gallery-1 button {
+    margin: 20px;
+}
+
+
+.text-box {
+   margin: 10vw;
+    text-align: center;
+    
+}
+
+/* Gallery 2 */
+.gallery-2 {
+    margin: 10px;
+    text-align: center;
+}
+.gallery-2 h2 {
+    margin-bottom: 0;
+}
+.gallery-2 p {
+    font-weight: 400;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.gallery-2 h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.gallery-2 button {
+    margin-bottom: 60px;
+}
+
+.gallery-2 .inline {
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* Pc gallery */
+.pc-gallery {
+    display: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--Main-color);
+    color: var(--White-color);
+    font-size: var(--Font-size-small);
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    letter-spacing: 1px;
+    font-size: 90%;
+}
+
+.footer-wrapper {
+    padding: 32px 20px;
+    
+}
+
+footer h5 {
+    font-size: 130%;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Newsletter */
+.Newsletter {
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+   margin: 40px 0;
+   
+}
+
+.Newsletter input {
+    height: 40px;
+}
+
+
+/*  Footer Flex box */
+/* Dont foget to custumize the mobile fooner font */
+.mobile-footer-column {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mobile-footer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0px, 1fr));
+}
+
+hr{
+    margin: 20px 10px;
+}
+/* footer socials */
+.socials i {
+    width: 20px;
+    
+}
+
+/* Media Quries */
+@media screen and (min-width: 200px) {
+    .nav-icons div{
+       padding: 0;  
+       margin: 0;  
+    }
+    /* Brand */
+    /* Change size when screen is big */
+    .brand {
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .nav-icons div{
+       padding-right: 20px;  
+       margin: 0;  
+    }
+    /* Brand */
+    /* Change size when screen is big */
+    .brand {
+        font-size: medium;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+        /* Nav icons */
+        .nav-icons div{
+            margin-right: 20px ;
+        }
+        .brand {
+            font-size: larger;
+            padding-left:20px;
+        }
+        
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-1{
+        display: flex;
+        flex-direction: row;
+        /* background-color: lightblue; */
+        background-color: rgb(170, 170, 170);
+    }
+
+    .gallery-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .tablet-gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px 20px;
+    }
+
+
+    .tablet-gallery img {
+        max-width: 40vw;
+        
+    }
+    .tablet-gallery button{
+        max-width: 20vw;
+    }
+
+    /* Nav icons */
+    .nav-icons div{
+        margin-right: 50px ;
+    }
+    .brand {
+        font-size: larger;
+        padding-left: 50px;
+    }
+    
+    .three {
+        background-color: rgb(196, 164, 132);
+    } 
+
+    /* Increase the width to 50vw for the img */
+}
+
+@media screen and (min-width:992px) {
+    .tablet-gallery {
+        justify-content: space-evenly;
+    }
+
+    .tablet-gallery img {
+        padding: 10px;
+    }
+
+    .pc-gallery {
+        display: block;
+    }
+}

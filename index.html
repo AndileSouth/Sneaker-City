@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+
+    <title>Sneaker City</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/e04e5a24fc.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header id="header">
+            <p class="promo-bar main-content">Express Shoping now only R45 &nbsp; <span class="learn-more cursor">Learn More</span> </p>
+            <div class="mobile-nav-icons">
+                
+                    <div class="cursor brand display-inline"><h2>SNEAKERS</h2></div>
+
+                <div class="nav-icons">
+                    <div id="search-icon" class="cursor display-inline" onclick="ShowSearchBox()"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div id="user-icon" class="cursor display-inline"><i class="fa-solid fa-user"></i></div>
+                    <div  id="card-icon" class="cursor nav-icon display-inline"> <i class="fa-solid fa-cart-shopping"></i></div>
+                    <div id="menu-icon" class="cursor nav-icon display-inline" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i>&nbsp;<span id="menu-icon" class="menu-icon" >MENU</span> </div>
+                </div>
+               
+            </div>
+
+            <div class="search-bar display-inline">
+
+                <div class="search-border">
+                
+                    <input id="search-box" type="text" class="display-inline search-box" placeholder="Search">
+
+                    <div class="cross-icon cursor" onclick="ClearInput()"><i class="fa-solid fa-xmark"></i></div>
+                    <div class="display-inline search-icon cursor">Search</div>
+                 
+                </div>
+
+            </div>
+        </header>
+        <div class="promo-bar main-content">
+            <h3> Get 20% off your first purchase</h3>
+        </div>
+        <!-- Menu Content -->
+        <div class="menu">
+            <hr>
+            <div class="menu-contents">
+            <ul>
+                <li>Womens</li>
+                <li>Mens</li>
+                <li>Kids</li>
+                <li>Collections</li>
+                <li>Sale</li>
+                <li>Returns</li>
+                <li>Track Order</li>
+            </ul>
+            </div>
+           
+        </div>
+
+        <div class="main-content">
+            <div class="gallery-1">
+                <div class="pic-one img-container">
+                    <img src="./img/woman-3295366.jpg" alt="">
+                </div>
+                <div class="text-box" >
+                    <h2>Hi There</h4>
+                    <p>
+                        Welcome to our sneaker shop, where we offer the latest and trendiest footwear for sneaker enthusiasts! Our store is a haven for all sneakerheads, providing a wide range of stylish and comfortable sneakers that cater to diverse tastes and preferences.
+                    </p>
+                    <button class="cursor">SHOP NOW</button>
+                </div>
+            </div>
+
+            <div class="gallery-2">
+                <h1>Explore <span class="no-wrap">Our Collection</span> </h1>
+
+            <div class="tablet-gallery">
+                <div>
+                    <div class="img-container">
+                    <img src="./img/pexels-hipkicks-6777913-fotor-20230720205114.jpg" alt="">
+                    </div>
+                    <h2>Hip Kicks</h2>
+                    <p>Fashion Killer </p>
+
+                    <button class="long-btn cursor">SHOP NOW</button>
+                </div>
+
+                <div class="pc-gallery">
+                    <div class="img-container">
+                    <img src="./img/pexels-erik-mclean-7543640-fotor-20230721102545.jpg" alt="">
+                    </div>
+                    <h2>Colors</h2>
+                    <p>Explore different colors</p>
+                    <button class="long-btn cursor">SHOP NOW</button>
+                </div>
+                <!-- L -->
+                <div>
+                    <div class="img-container">
+                    <img src="./img/beach-6544025_1280.jpg" alt="">
+                    </div>
+                    <h2>Summer Vibes</h2>
+                    <p>Lets Go To The Beach</p>
+                    <button class="long-btn cursor">SHOP NOW</button>
+                </div>
+                
+            </div>
+
+            </div>
+
+            <!-- find a diiferent pic for the mens -->
+            <div class="gallery-2">
+                <h1>STEP UP YOUR SHOE GAME</h1>
+
+            <div class="tablet-gallery two">
+
+                    <div>
+                    <div class="img-container">
+                        <img src="./img/pexels-maria-orlova-4906157.jpg" alt="">
+                    </div>
+                    <button class="cursor">MEN'S SHOES</button>
+                    </div>
+
+                    <div class="pc-gallery">
+                        <div class="img-container">
+                            <img src="./img/pexels-antoni-shkraba-7081147.jpg" alt="">
+                        </div>
+                        <button class="cursor">BOTH</button>
+                    </div>
+
+                    <div>
+                        <div class="img-container">
+                            <img src="./img/pexels-raul-albright-16985344.jpg" alt="">
+                        </div>
+                        <button class="cursor">WOMEN'S SHOES</button> 
+                    </div>
+
+                    
+            </div>
+                
+                
+            </div>
+
+            <div class="gallery-2">
+
+                <div class="tablet-gallery three">
+
+                    <div>
+                        <div class="img-container">
+                        <img src="./img/pexels-godisable-jacob-1020488.jpg" alt="">
+                    </div>
+                    </div>
+                    
+                    <div>
+                        <h1>THIS JUST IN</h1>
+                        <h2>EXPLORE NEW ARRIVALS</h2>
+                        <button class="inline">MEN'S SHOES</button>
+                        <button class="inline ">WOMEN'S SHOES</button>
+                        <button>SHOP KIDS</button>
+                    </div>
+
+                    <div class="pc-gallery">
+                        <div class="img-container">
+                            <img src="./img/pexels-christian-diokno-3480353.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="Newsletter">
+                <hr>
+                    <form action="">
+                        <h1>Newsletter Sign Up</h1>
+                        <h4>Get the lastest Trendy products dircttly to you email</h4>
+                        <input type="text" name="" id="" placeholder="Gmail" >
+                        <button>sign up</button>
+                    </form>
+
+            </div>
+
+            <footer>
+                <!-- Adjust footer to row at width 700px -->
+                <hr>
+                <div class="div footer-wrapper">
+
+                    <div class="pc-gallery-footer">
+
+                        <div class="mobile-footer-column ">
+
+                            <h5>Support</h5>
+
+                            <div class="mobile-footer">
+                                <div>
+                                    <ul>
+                                        <li class="cursor">Customer Service</li>
+                                        <li class="cursor">FAQs</li>
+                                        <li class="cursor">Contact Us</li>
+                                        <li class="cursor">Store locator</li>
+                                        <li class="cursor">Flagsghip store</li>
+                                        <li class="cursor">Terms & Conditions</li>
+                                        <li class="cursor">Transparency in Supply Chain</li>
+                                        <li class="cursor"> Check Gift Card Balance</li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <ul>
+                                        <li class="cursor">Shipping and Delivery</li>
+                                        <li class="cursor">return Policy</li>
+                                        <li class="cursor">Purchase A Digital Gift Card</li>
+                                        <li class="cursor">Servce Discount</li>
+                                        <li class="cursor">Privacy Policy</li>
+                                        <li class="cursor"></li>
+                                        <li class="cursor">Do Not Sell or Share My Infomation</li>
+                                        <li class="cursor">Cookie settings</li>
+                                        
+                                    </ul>
+                                </div>
+
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="mobile-footer-column ">
+
+                            <h5>About</h5>
+
+                            <div class="mobile-footer">
+
+                                <div>
+                                    <ul>
+                                        <li class="cursor">Company</li>
+                                        <li class="cursor">Press Center</li>
+                                        <li class="cursor">Investor</li>
+                                        <li class="cursor">Careers</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li class="cursor">Corporate</li>
+                                        <li class="cursor">#REFORMS</li>
+                                        <li class="cursor">sSustainability</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+
+                        <div class="socials">
+                            <h5>Socials</h5>
+                            <div>
+                                <i class="cursor fa-brands fa-square-facebook"></i>&nbsp;
+
+                            <i class="cursor fa-brands fa-instagram"></i>&nbsp;
+                            <i class="cursor fa-brands fa-square-twitter"></i>&nbsp;
+                            <i class="cursor fa-brands fa-pinterest"></i>&nbsp;
+                            <i class="cursor fa-brands fa-youtube"></i>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
